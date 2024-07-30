@@ -1,0 +1,12 @@
+﻿Ze skanu faktury wyodrębnij następujące dane i przedstaw je w formacie JSON. Zwróć tylko oczekiwany obiekt JSON.
+{
+   "numer_faktury" : "number faktury np.: 1234/2023",
+   "data_wystawienia" : "Data wystawienie faktury np.: 02/03/2023 w formacie dd/MM/yyyy",
+   "kwota_do_zatlaty" : "Sumaryczna kwota do zapłaty np.: 800 PLN oznaczona etykietą Razem.",
+   "towar" : "Rodzaj lub nazwa dla towaru lub usługi widniejący na fakturze. Zwróć listę JSON. Dla każdego rodzaju towaru lub usługi zwróć informację o: Nazwie towar, mierze, ilości, cenie jednostkowej, wartości towaru.",
+   "nabywca" : "Imię nazwisko lub nazwa firmy nabywająca towar",
+   "adres_nabywcy" : "adres osób bądź firmy nabywającej towar lub usługę."
+   "podpis" : "Postaraj się określić czy faktura jest podpisana. Jeżeli nie jesteś pewien zwróć "do sprawdzenia" inaczej zwróć true or false."
+}
+
+Podaj dane tylko jeżeli widnieją na fakturze. Jeżeli dana informacja nie widnieje na fakturze nie podawaj jej w ogóle. Nie używaj przecinków w wartościach liczbowych.
